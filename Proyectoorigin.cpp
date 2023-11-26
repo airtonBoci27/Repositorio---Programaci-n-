@@ -40,6 +40,7 @@ void   sisVendedor();
 void   regVendedor();
 void   menVendedor();
 
+
 void    regProducto();
 void    addProducto();
 int     getProducto();
@@ -50,6 +51,7 @@ int     posicionProducto(int);
 void    eliminarProducto();
 float   generarVenta();
 void    venta();
+
 
 int main()
 {
@@ -289,6 +291,7 @@ void   menVendedor()
 	int codigoDeUsuario;
     int opcion;
 	bool flag = false;
+    bool ventaValida = false;
 	cout << "\t\t\tACCESO AL SISTEMA\n";
     cout << "\t\t\t-----------------\n";
     cin.ignore();
@@ -346,8 +349,28 @@ void   menVendedor()
                         system("pause");
                         system("cls"); 
                         break;
-                case 5:  
-                case 6: 
+                case 5: system("cls");
+                        cout << "\t¿Desea validar la compra? (S/s para validar): ";
+                        cin >> nombreCajero;
+                        if (nombreCajero == "S" || nombreCajero == "s") {
+                            ventaValida = true;
+                            cout << "\tVenta validada correctamente\n";
+                        } else {
+                            ventaValida = false;
+                            cout << "\tVenta cancelada\n";
+                        }
+                        system("pause");
+                        system("cls");
+                        break;
+                case 6: system("cls");
+                        if (ventaValida) {
+                        cout << "\tEstado de la venta: VALIDA\n";
+                        } else {
+                         cout << "\tEstado de la venta: CANCELADA\n";
+                        }
+                        system("pause");
+                        system("cls");
+                        break;
 				case 7: system("cls"); 
                         main(); 
                         system("pause");
@@ -664,3 +687,4 @@ void venta()
     }
     
 }
+
