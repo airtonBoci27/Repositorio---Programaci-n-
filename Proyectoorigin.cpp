@@ -148,7 +148,7 @@ void   regCliente()
 
     vecCliente.push_back(cliente);
 
-    // Almacena el cliente actual
+    
     nombreClienteActual = usu;
     codigoClienteActual = cod;
 
@@ -703,4 +703,3 @@ void venta()
     }
     
 }
-
