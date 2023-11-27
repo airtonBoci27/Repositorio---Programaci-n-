@@ -268,7 +268,7 @@ void   regVendedor()
 {
 	int cod;
     string usu;
-    cout << "\t\t\tREGISTRO DE CLIENTES\n";
+    cout << "\t\t\tREGISTRO DE CAJA\n";
     cout << "\t\t\t---------------------\n";
     cin.ignore();
     cout << "\tNumero de Caja: "; cin >> cod;
