@@ -96,8 +96,10 @@ void   sisCliente()
     int opcion;
     do
     {
+        cout << "\t\t\t------------------\n";
         cout << "\t\t\tSISTEMA DE CLIENTE\n";
-		cout << "\tRegistro _______________________________[1]\n";
+		cout << "\t\t\t------------------\n";
+        cout << "\tRegistro _______________________________[1]\n";
         cout << "\tLogin___________________________________[2]\n";
         cout << "\tFinalizar Registro De Clientes__________[3]\n";
         cout << "\tIngrese una opcion[1-3]: ";
@@ -130,6 +132,7 @@ void   regCliente()
 	int cod;
     string usu;
     string contr;
+    cout << "\t\t\t---------------------\n";
     cout << "\t\t\tREGISTRO DE CLIENTES\n";
     cout << "\t\t\t---------------------\n";
     cin.ignore();
@@ -159,6 +162,7 @@ void   valCliente()
     int codigoDeUsuario;
     int opcion;
     bool flag = false;
+    cout << "\t\t\t-----------------\n";
     cout << "\t\t\tACCESO AL SISTEMA\n";
     cout << "\t\t\t-----------------\n";
     cin.ignore();
@@ -190,7 +194,9 @@ void   valCliente()
 		system("cls");
         do
         {
+            cout << "\t\t\t-----------------\n";
             cout << "\t\t\tSISTEMA DE VENTAS\n";
+            cout << "\t\t\t-----------------\n";
             cout << "\tMenu de Productos______________[1]\n";;
             cout << "\tSalir__________________________[2]\n";
             cout << "\tIngrese una opcion[1-2]: ";
@@ -236,7 +242,9 @@ void  sisVendedor()
      int opcion;
     do
     {
+        cout << "\t\t\t------------------\n";
         cout << "\t\t\tSISTEMA DEL CAJERO \n";
+        cout << "\t\t\t------------------\n";
 		cout << "\tRegistro De Personal ____________[1]\n";
         cout << "\tIniciar Operacion _______________[2]\n";
         cout << "\tFinalizar Operacion______________[3]\n";
@@ -268,8 +276,9 @@ void   regVendedor()
 {
 	int cod;
     string usu;
+    cout << "\t\t\t----------------\n";
     cout << "\t\t\tREGISTRO DE CAJA\n";
-    cout << "\t\t\t---------------------\n";
+    cout << "\t\t\t----------------\n";
     cin.ignore();
     cout << "\tNumero de Caja: "; cin >> cod;
     cin.ignore();
@@ -292,7 +301,8 @@ void   menVendedor()
     int opcion;
 	bool flag = false;
     bool ventaValida = false;
-	cout << "\t\t\tACCESO AL SISTEMA\n";
+	cout << "\t\t\t-----------------\n";
+    cout << "\t\t\tACCESO AL SISTEMA\n";
     cout << "\t\t\t-----------------\n";
     cin.ignore();
 	cout << "\tNumero De Caja: ";
@@ -317,7 +327,9 @@ void   menVendedor()
 		system("cls");
         do
         {
+            cout << "\t\t\t---------------\n";
             cout << "\t\t\tSISTEMA DE CAJA\n";
+            cout << "\t\t\t---------------\n";
             cout << "\tReporte De La Compra _____________________[1]\n";
             cout << "\tModificacion De Producto__________________[2]\n";
             cout << "\tEliminacion De Producto___________________[3]\n";
@@ -395,8 +407,10 @@ void    regProducto()
     int opcion;
     do
     {
+        cout << "\t\t\t----------------------------------------\n";
         cout << "\t\t\tMENU DE REGISTRO DE PRODUCTOS DE VICTOYS\n";
-		cout << "\tSeleccion de Productos__________[1]\n";
+		cout << "\t\t\t----------------------------------------\n";
+        cout << "\tSeleccion de Productos__________[1]\n";
 		cout << "\tBuscar Producto_________________[2]\n";
 		cout << "\tListar Productos________________[3]\n";
 		cout << "\tSalir___________________________[4]\n";
@@ -438,7 +452,9 @@ void addProducto()
 
     do
 	{
-		cout << " \t\t\tPRODUCTOS DISPONIBLES DE VICTOYS\n";
+		cout << "\t\t\t---------------------------------\n";
+        cout << " \t\t\tPRODUCTOS DISPONIBLES DE VICTOYS\n";
+        cout << "\t\t\t---------------------------------\n";
 		cout << " \tMAX STEELL  - $25.30___________[1]\n";
 		cout << " \tOSO TED     - $12.50___________[2]\n";
 		cout << " \tBARBIE      - $28.70___________[3]\n";
